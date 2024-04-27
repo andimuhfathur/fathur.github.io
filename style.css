@@ -1,0 +1,311 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 2000px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, black, rgb(41, 40, 40));
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3%;
+    background: black;
+}
+
+nav .navbar .judul-website a{
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+}
+
+nav .navbar .judul-website span{
+    background-image: linear-gradient(to right, blue, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .navbar .link a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 1rem;
+    transition: 0.9s ease all;
+}
+
+nav .navbar .link a:hover {
+    background-image: linear-gradient(to right, blue, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    
+}
+
+
+.home .username p{
+    font-size: 2.8rem;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+
+.home .username .ket p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.home .username .ket #sendiri {
+    color: #fff;
+}
+
+.home .username .ket p span {
+    background-image: linear-gradient(to right, blue, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+
+
+.home .img-fotoku img {
+    display: flex;
+    margin-left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    
+    transition: 0.3s ease all;
+    z-index: -1;
+}
+
+
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tentang .img-fotoku img{
+    width: 80%;
+    height: 80%;
+    
+        transition: 0.3s ease all;
+}
+
+
+
+.tentang .me h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.tentang .me span {
+    background-image: linear-gradient(to right, blue, aqua);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+} 
+
+.tentang .me .ket2 {
+    font-weight: 600;
+    color: white;
+}
+
+.kemampuan {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.kemampuan .sub span {
+    background-image: linear-gradient(to right, blue, aqua);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.kemampuan .sub h1 {
+    margin-top: 5%;
+    color: white;
+}
+
+.kemampuan .sub .card-kemampuan {
+    display: flex;
+    gap: 2rem;
+    padding: 8%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+.kemampuan .card {
+    position: static;
+   display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 4rem;
+    background-color: rgb(92, 92, 92);
+    border: 4px solid black;
+    box-shadow: 5px 5px 8px black;
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+
+}
+
+.kemampuan .card:hover {
+    position: static;
+    background: linear-gradient(to top left, blue,aqua);
+    border: 4px solid white;
+    box-shadow: 5px 5px 8px white;
+    scale: 105%;
+}
+
+.foot{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+        background: linear-gradient(to top left, blue, aqua);
+    height: 100vh;
+}
+
+.foot .divtext ul li {
+    margin-left: 10%;
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+
+    nav .navbar{
+        padding: 0.1%;
+    }
+    nav .navbar .judul-website a{
+        display: flex;
+        font-size: 1rem;
+        width: 100%;
+    }
+    nav .navbar .link a{
+        visibility: hidden;
+    }
+
+    .home{
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: right;
+        text-align: center;
+    }
+
+    .home .username{
+        margin-top: 5rem;
+        
+        
+    }
+.home .username p{
+    font-size: 1.6rem;
+}
+
+.home .img-fotoku img{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 0rem;
+}
+.tentang .img-fotoku img{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.tentang{
+    flex-direction: column;
+}
+
+.tentang .me h1{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.tentang .me .ket2{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.kemampuan{
+    min-height: 1200px;
+}
+
+.kemampuan .sub .card-kemampuan{
+    flex-wrap: wrap;
+}
+
+.kemampuan .sub h1{
+    font-size: 1.5rem;
+}
+
+.kemampuan .sub .card-kemampuan{
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.kemampuan .card{
+    width: 100%;
+}
+
+.foot{
+    flex-direction: column;
+    min-height: 10px;
+}
+
+.foot .divtext ul li{
+    padding: 1%;
+    font-size: 1rem;
+}
+
+.foot .img-fotoku img {
+    display: flex;
+    justify-items: center;
+    
+}
+
+}
